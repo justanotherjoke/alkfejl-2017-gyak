@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Just a title</title>
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+	<form action="#" th:action="@{/student}" th:object="${student}" method="post">
+    Firstname: <input type="text" th:field="*{firstname}" /> <br />
+    Lastname: <input type="text" th:field="*{lastname}" /> <br />
+    Neptun: <input type="text" th:field="*{neptun}" /> <br />
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
