@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Just a title</title>
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+	<h1 th:text="${title}"></h1>
+	<ul>
+		<li th:each="name: ${students}" th:text="${name}">names</li>
+	</ul>
+</body>
+</html>
